@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="first">
+	<property name="hello" value="welcome"/>
+
+	<target name="first">
+		<delete dir="bin"/>
+		<delete dir="gen"/>
+		<delete file="output.txt"/>
+	</target>
+</project>

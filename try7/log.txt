@@ -1,0 +1,377 @@
+Buildfile: C:\JCOP\try7\build.xml
+
+-set-mode-check:
+
+-set-debug-files:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.3.0
+ [checkenv] Installed at C:\JCOP\android\sdk
+
+-setup:
+     [echo] Project Name: Main
+  [gettype] Project Type: Application
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.0
+     [echo] Resolving Build Target for Main...
+[gettarget] Project Target:   Android 4.4
+[gettarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: C:\JCOP\try7\bin
+    [mkdir] Created dir: C:\JCOP\try7\bin\res
+    [mkdir] Created dir: C:\JCOP\try7\bin\rsObj
+    [mkdir] Created dir: C:\JCOP\try7\bin\rsLibs
+    [mkdir] Created dir: C:\JCOP\try7\gen
+    [mkdir] Created dir: C:\JCOP\try7\bin\classes
+    [mkdir] Created dir: C:\JCOP\try7\bin\dexedLibs
+     [echo] ----------
+     [echo] Resolving Dependencies for Main...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+     [echo] ----------
+     [echo] Building Libraries with 'debug'...
+   [subant] No sub-builds to iterate on
+
+-pre-build:
+
+-code-gen:
+[mergemanifest] Merging AndroidManifest files into one.
+[mergemanifest] Manifest merger disabled. Using project manifest only.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Generating resource IDs...
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] Generating BuildConfig class.
+
+-pre-compile:
+
+-compile:
+     [exec] arguments: [-sourcepath, gen, -ctl, -d, bin\classes, -classpath, .;libs\aspectjrt.jar;C:\JCOP\android\sdk\platforms\android-19\android.jar, edu.ucdavis.cs.mobile.cop.benchmark.R] 
+     [exec]  [File Generation] Copy file: After.java to C:\JCOP\try7\gen\jcop\lang 
+     [exec]  [File Generation] Copy file: BaseLayer.java to C:\JCOP\try7\gen\jcop\lang 
+     [exec]  [File Generation] Copy file: BaseMethod.java to C:\JCOP\try7\gen\jcop\lang 
+     [exec]  [File Generation] Copy file: Before.java to C:\JCOP\try7\gen\jcop\lang 
+     [exec]  [File Generation] Copy file: Composition.java to C:\JCOP\try7\gen\jcop\lang 
+     [exec]  [File Generation] Copy file: Compositions.java to C:\JCOP\try7\gen\jcop\lang 
+     [exec]  [File Generation] Copy file: ConcreteLayer.java to C:\JCOP\try7\gen\jcop\lang 
+     [exec]  [File Generation] Copy file: Context.java to C:\JCOP\try7\gen\jcop\lang 
+     [exec]  [File Generation] Copy file: ContextChangeListener.java to C:\JCOP\try7\gen\jcop\lang 
+     [exec]  [File Generation] Copy file: ContextComposition.java to C:\JCOP\try7\gen\jcop\lang 
+     [exec]  [File Generation] Copy file: DelegationMethod.java to C:\JCOP\try7\gen\jcop\lang 
+     [exec]  [File Generation] Copy file: Evaluate.java to C:\JCOP\try7\gen\jcop\lang 
+     [exec]  [File Generation] Copy file: Generated.java to C:\JCOP\try7\gen\jcop\lang 
+     [exec]  [File Generation] Copy file: InternalContext.java to C:\JCOP\try7\gen\jcop\lang 
+     [exec]  [File Generation] Copy file: InvalidMethodAccessException.java to C:\JCOP\try7\gen\jcop\lang 
+     [exec]  [File Generation] Copy file: JCop.java to C:\JCOP\try7\gen\jcop\lang 
+     [exec]  [File Generation] Copy file: JCopException.java to C:\JCOP\try7\gen\jcop\lang 
+     [exec]  [File Generation] Copy file: Layer.java to C:\JCOP\try7\gen\jcop\lang 
+     [exec]  [File Generation] Copy file: LayerProvider.java to C:\JCOP\try7\gen\jcop\lang 
+     [exec]  [File Generation] Copy file: LayerProxy.java to C:\JCOP\try7\gen\jcop\lang 
+     [exec]  [File Generation] Copy file: Layered.java to C:\JCOP\try7\gen\jcop\lang 
+     [exec]  [File Generation] Copy file: LayeredMethod.java to C:\JCOP\try7\gen\jcop\lang 
+     [exec]  [File Generation] Copy file: LayeredState.java to C:\JCOP\try7\gen\jcop\lang 
+     [exec]  [File Generation] Copy file: Layers.java to C:\JCOP\try7\gen\jcop\lang 
+     [exec]  [File Generation] Copy file: LinkedHashtable.java to C:\JCOP\try7\gen\jcop\lang 
+     [exec]  [File Generation] Copy file: ParitalMethodA.java to C:\JCOP\try7\gen\jcop\lang 
+     [exec]  [File Generation] Copy file: PartialField.java to C:\JCOP\try7\gen\jcop\lang 
+     [exec]  [File Generation] Copy file: PartialMethod.java to C:\JCOP\try7\gen\jcop\lang 
+     [exec]  [File Generation] Delete file: bin\classes\jcop\lang FAIL! 
+     [exec]  [Compiler] Compiling: C:\JCOP\try7\gen\edu\ucdavis\cs\mobile\cop\benchmark\R.java 
+     [exec]  ..done 
+     [exec]  [Compiler] Compiling: jcop\lang\BaseLayer.java 
+     [exec]  ..done 
+     [exec]  [Compiler] Compiling: jcop\lang\JCop.java 
+     [exec]  ..done 
+     [exec]  [Compiler] Compiling: jcop\lang\PartialMethod.java 
+     [exec]  ..done 
+     [exec]  [Compiler] Compiling: jcop\lang\Composition.java 
+     [exec]  ..done 
+     [exec]  [Compiler] Compiling: jcop\lang\LayerProxy.java 
+     [exec]  ..done 
+     [exec]  [Compiler] Compiling: jcop\lang\Compositions.java 
+     [exec]  ..done 
+     [exec]  [Compiler] Compiling: jcop\lang\ContextComposition.java 
+     [exec]  ..done 
+     [exec]  [Compiler] Compiling: jcop\lang\LayerProvider.java 
+     [exec]  ..done 
+     [exec]  [Compiler] Compiling: jcop\lang\LinkedHashtable.java 
+     [exec]  ..done 
+     [exec]  [Compiler] Compiling: jcop\lang\InternalContext.java 
+     [exec]  ..done 
+     [exec]  compiling layers:  
+     [exec]  ..done 
+     [exec]  [Compiler] Compile and weave auxilliary aspect 
+     [exec]   bin\classes\jcop\lang\JCopAspect.aj 
+     [exec]   [-classpath, C:\JCOP\jcop-compiler\jcop.jar;C:\JCOP\jcop-compiler\aspectjrt.jar;.;libs\aspectjrt.jar;C:\JCOP\android\sdk\platforms\android-19\android.jar, -aspectpath, C:\JCOP\jcop-compiler\jcop.jar;C:\JCOP\jcop-compiler\aspectjrt.jar;.;libs\aspectjrt.jar;C:\JCOP\android\sdk\platforms\android-19\android.jar, -inpath, bin\classes, -d, bin\classes, -1.6, -Xmx64M, -g:none, -Xlint:ignore, bin\classes\jcop\lang\JCopAspect.aj] 
+     [exec]   ..done 
+     [exec]   [File Generation] Delete folder: bin\classes\jcop\lang\JCopAspect.aj  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\gen\jcop\lang\PartialMethod.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\gen\jcop\lang\PartialField.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\gen\jcop\lang\ParitalMethodA.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\gen\jcop\lang\LinkedHashtable.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\gen\jcop\lang\Layers.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\gen\jcop\lang\LayeredState.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\gen\jcop\lang\LayeredMethod.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\gen\jcop\lang\Layered.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\gen\jcop\lang\LayerProxy.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\gen\jcop\lang\LayerProvider.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\gen\jcop\lang\Layer.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\gen\jcop\lang\JCopException.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\gen\jcop\lang\JCop.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\gen\jcop\lang\InvalidMethodAccessException.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\gen\jcop\lang\InternalContext.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\gen\jcop\lang\Generated.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\gen\jcop\lang\Evaluate.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\gen\jcop\lang\DelegationMethod.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\gen\jcop\lang\ContextComposition.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\gen\jcop\lang\ContextChangeListener.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\gen\jcop\lang\Context.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\gen\jcop\lang\ConcreteLayer.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\gen\jcop\lang\Compositions.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\gen\jcop\lang\Composition.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\gen\jcop\lang\Before.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\gen\jcop\lang\BaseMethod.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\gen\jcop\lang\BaseLayer.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\gen\jcop\lang\After.java  
+     [exec]   [File Generation] Delete folder: gen\jcop\lang  
+     [exec]   [File Generation] Delete folder: gen\jcop  
+     [exec]   compiled in  5739 millis
+     [exec]  
+     [exec] arguments: [-sourcepath, src, -ctl, -d, bin\classes, -classpath, .;libs\aspectjrt.jar;C:\JCOP\android\sdk\platforms\android-19\android.jar;bin\classes, edu.ucdavis.cs.mobile.cop.benchmark.Main] 
+     [exec]  [File Generation] Copy file: After.java to C:\JCOP\try7\src\jcop\lang 
+     [exec]  [File Generation] Copy file: BaseLayer.java to C:\JCOP\try7\src\jcop\lang 
+     [exec]  [File Generation] Copy file: BaseMethod.java to C:\JCOP\try7\src\jcop\lang 
+     [exec]  [File Generation] Copy file: Before.java to C:\JCOP\try7\src\jcop\lang 
+     [exec]  [File Generation] Copy file: Composition.java to C:\JCOP\try7\src\jcop\lang 
+     [exec]  [File Generation] Copy file: Compositions.java to C:\JCOP\try7\src\jcop\lang 
+     [exec]  [File Generation] Copy file: ConcreteLayer.java to C:\JCOP\try7\src\jcop\lang 
+     [exec]  [File Generation] Copy file: Context.java to C:\JCOP\try7\src\jcop\lang 
+     [exec]  [File Generation] Copy file: ContextChangeListener.java to C:\JCOP\try7\src\jcop\lang 
+     [exec]  [File Generation] Copy file: ContextComposition.java to C:\JCOP\try7\src\jcop\lang 
+     [exec]  [File Generation] Copy file: DelegationMethod.java to C:\JCOP\try7\src\jcop\lang 
+     [exec]  [File Generation] Copy file: Evaluate.java to C:\JCOP\try7\src\jcop\lang 
+     [exec]  [File Generation] Copy file: Generated.java to C:\JCOP\try7\src\jcop\lang 
+     [exec]  [File Generation] Copy file: InternalContext.java to C:\JCOP\try7\src\jcop\lang 
+     [exec]  [File Generation] Copy file: InvalidMethodAccessException.java to C:\JCOP\try7\src\jcop\lang 
+     [exec]  [File Generation] Copy file: JCop.java to C:\JCOP\try7\src\jcop\lang 
+     [exec]  [File Generation] Copy file: JCopException.java to C:\JCOP\try7\src\jcop\lang 
+     [exec]  [File Generation] Copy file: Layer.java to C:\JCOP\try7\src\jcop\lang 
+     [exec]  [File Generation] Copy file: LayerProvider.java to C:\JCOP\try7\src\jcop\lang 
+     [exec]  [File Generation] Copy file: LayerProxy.java to C:\JCOP\try7\src\jcop\lang 
+     [exec]  [File Generation] Copy file: Layered.java to C:\JCOP\try7\src\jcop\lang 
+     [exec]  [File Generation] Copy file: LayeredMethod.java to C:\JCOP\try7\src\jcop\lang 
+     [exec]  [File Generation] Copy file: LayeredState.java to C:\JCOP\try7\src\jcop\lang 
+     [exec]  [File Generation] Copy file: Layers.java to C:\JCOP\try7\src\jcop\lang 
+     [exec]  [File Generation] Copy file: LinkedHashtable.java to C:\JCOP\try7\src\jcop\lang 
+     [exec]  [File Generation] Copy file: ParitalMethodA.java to C:\JCOP\try7\src\jcop\lang 
+     [exec]  [File Generation] Copy file: PartialField.java to C:\JCOP\try7\src\jcop\lang 
+     [exec]  [File Generation] Copy file: PartialMethod.java to C:\JCOP\try7\src\jcop\lang 
+     [exec]  [File Generation] Delete file: bin\classes\jcop\lang\BaseLayer.class  
+     [exec]  [File Generation] Delete file: bin\classes\jcop\lang\Composition$LayerLogger.class  
+     [exec]  [File Generation] Delete file: bin\classes\jcop\lang\Composition$LayerToProxyMap.class  
+     [exec]  [File Generation] Delete file: bin\classes\jcop\lang\Composition.class  
+     [exec]  [File Generation] Delete file: bin\classes\jcop\lang\Compositions.class  
+     [exec]  [File Generation] Delete file: bin\classes\jcop\lang\ConcreteLayer.class  
+     [exec]  [File Generation] Delete file: bin\classes\jcop\lang\ContextComposition$ContextClassInstanceList.class  
+     [exec]  [File Generation] Delete file: bin\classes\jcop\lang\ContextComposition$ContextList.class  
+     [exec]  [File Generation] Delete file: bin\classes\jcop\lang\ContextComposition.class  
+     [exec]  [File Generation] Delete file: bin\classes\jcop\lang\InternalContext.class  
+     [exec]  [File Generation] Delete file: bin\classes\jcop\lang\JCop$1.class  
+     [exec]  [File Generation] Delete file: bin\classes\jcop\lang\JCop.class  
+     [exec]  [File Generation] Delete file: bin\classes\jcop\lang\JCopAspect.class  
+     [exec]  [File Generation] Delete file: bin\classes\jcop\lang\Layer.class  
+     [exec]  [File Generation] Delete file: bin\classes\jcop\lang\LayerProvider.class  
+     [exec]  [File Generation] Delete file: bin\classes\jcop\lang\LayerProxy.class  
+     [exec]  [File Generation] Delete file: bin\classes\jcop\lang\LinkedHashtable.class  
+     [exec]  [File Generation] Delete file: bin\classes\jcop\lang\PartialMethod.class  
+     [exec]  [Compiler] Compiling: C:\JCOP\try7\src\edu\ucdavis\cs\mobile\cop\benchmark\Main.java 
+     [exec]  ..done 
+     [exec]  [Compiler] Compiling: edu\ucdavis\cs\mobile\cop\benchmark\AnotherActivity.java 
+     [exec]  ..done 
+     [exec]  [Compiler] Compiling: edu\ucdavis\cs\mobile\cop\benchmark\OtherActivity.java 
+     [exec]  ..done 
+     [exec]  [Compiler] Compiling: jcop\lang\BaseLayer.java 
+     [exec]  ..done 
+     [exec]  [Compiler] Compiling: jcop\lang\JCop.java 
+     [exec]  ..done 
+     [exec]  [Compiler] Compiling: jcop\lang\PartialMethod.java 
+     [exec]  ..done 
+     [exec]  [Compiler] Compiling: jcop\lang\Composition.java 
+     [exec]  ..done 
+     [exec]  [Compiler] Compiling: jcop\lang\LayerProxy.java 
+     [exec]  ..done 
+     [exec]  [Compiler] Compiling: jcop\lang\Compositions.java 
+     [exec]  ..done 
+     [exec]  [Compiler] Compiling: jcop\lang\ContextComposition.java 
+     [exec]  ..done 
+     [exec]  [Compiler] Compiling: jcop\lang\LayerProvider.java 
+     [exec]  ..done 
+     [exec]  [Compiler] Compiling: jcop\lang\LinkedHashtable.java 
+     [exec]  ..done 
+     [exec]  [Compiler] Compiling: jcop\lang\InternalContext.java 
+     [exec]  ..done 
+     [exec]  compiling layers:  
+     [exec]  ..done 
+     [exec]  [Compiler] Compile and weave auxilliary aspect 
+     [exec]   bin\classes\jcop\lang\JCopAspect.aj 
+     [exec]   [-classpath, C:\JCOP\jcop-compiler\jcop.jar;C:\JCOP\jcop-compiler\aspectjrt.jar;.;libs\aspectjrt.jar;C:\JCOP\android\sdk\platforms\android-19\android.jar;bin\classes, -aspectpath, C:\JCOP\jcop-compiler\jcop.jar;C:\JCOP\jcop-compiler\aspectjrt.jar;.;libs\aspectjrt.jar;C:\JCOP\android\sdk\platforms\android-19\android.jar;bin\classes, -inpath, bin\classes, -d, bin\classes, -1.6, -Xmx64M, -g:none, -Xlint:ignore, bin\classes\jcop\lang\JCopAspect.aj] 
+     [exec]   ..done 
+     [exec]   [File Generation] Delete folder: bin\classes\jcop\lang\JCopAspect.aj  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\src\jcop\lang\PartialMethod.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\src\jcop\lang\PartialField.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\src\jcop\lang\ParitalMethodA.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\src\jcop\lang\LinkedHashtable.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\src\jcop\lang\Layers.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\src\jcop\lang\LayeredState.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\src\jcop\lang\LayeredMethod.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\src\jcop\lang\Layered.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\src\jcop\lang\LayerProxy.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\src\jcop\lang\LayerProvider.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\src\jcop\lang\Layer.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\src\jcop\lang\JCopException.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\src\jcop\lang\JCop.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\src\jcop\lang\InvalidMethodAccessException.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\src\jcop\lang\InternalContext.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\src\jcop\lang\Generated.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\src\jcop\lang\Evaluate.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\src\jcop\lang\DelegationMethod.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\src\jcop\lang\ContextComposition.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\src\jcop\lang\ContextChangeListener.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\src\jcop\lang\Context.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\src\jcop\lang\ConcreteLayer.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\src\jcop\lang\Compositions.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\src\jcop\lang\Composition.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\src\jcop\lang\Before.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\src\jcop\lang\BaseMethod.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\src\jcop\lang\BaseLayer.java  
+     [exec]   [File Generation] Delete folder: C:\JCOP\try7\src\jcop\lang\After.java  
+     [exec]   compiled in  7171 millis
+     [exec]  
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+      [dex] input: C:\JCOP\try7\bin\classes
+      [dex] input: C:\JCOP\try7\libs\aspectjrt.jar
+      [dex] Pre-Dexing C:\JCOP\try7\libs\aspectjrt.jar -> aspectjrt-9a6e691bec777cf98a7b67f80fdcbea9.jar
+      [dex] Converting compiled files and external libraries into C:\JCOP\try7\bin\classes.dex...
+       [dx] 
+       [dx] EXCEPTION FROM SIMULATION:
+       [dx] mismatched stack depths
+       [dx] 
+       [dx] underlay stack:
+       [dx] stack[top0]: I
+       [dx] overlay stack:
+       [dx] ...while merging to block 0025
+       [dx] ...while working on block 001a
+       [dx] ...while working on method onCheckedChanged:(Landroid/widget/RadioGroup;I)V
+       [dx] ...while processing onCheckedChanged (Landroid/widget/RadioGroup;I)V
+       [dx] ...while processing edu/ucdavis/cs/mobile/cop/benchmark/AnotherActivity$3.class
+       [dx] 
+       [dx] 
+       [dx] EXCEPTION FROM SIMULATION:
+       [dx] mismatched stack depths
+       [dx] 
+       [dx] underlay stack:
+       [dx] stack[top0]: I
+       [dx] overlay stack:
+       [dx] ...while merging to block 0039
+       [dx] ...while working on block 002e
+       [dx] ...while working on method onCheckedChanged:(Landroid/widget/RadioGroup;I)V
+       [dx] ...while processing onCheckedChanged (Landroid/widget/RadioGroup;I)V
+       [dx] ...while processing edu/ucdavis/cs/mobile/cop/benchmark/AnotherActivity$4.class
+       [dx] 
+       [dx] 
+       [dx] EXCEPTION FROM SIMULATION:
+       [dx] mismatched stack depths
+       [dx] 
+       [dx] underlay stack:
+       [dx] stack[top0]: I
+       [dx] overlay stack:
+       [dx] ...while merging to block 0025
+       [dx] ...while working on block 001a
+       [dx] ...while working on method onCheckedChanged:(Landroid/widget/RadioGroup;I)V
+       [dx] ...while processing onCheckedChanged (Landroid/widget/RadioGroup;I)V
+       [dx] ...while processing edu/ucdavis/cs/mobile/cop/benchmark/AnotherActivity$5.class
+       [dx] 
+       [dx] 
+       [dx] EXCEPTION FROM SIMULATION:
+       [dx] mismatched stack depths
+       [dx] 
+       [dx] underlay stack:
+       [dx] stack[top0]: I
+       [dx] overlay stack:
+       [dx] ...while merging to block 0025
+       [dx] ...while working on block 001a
+       [dx] ...while working on method onCheckedChanged:(Landroid/widget/RadioGroup;I)V
+       [dx] ...while processing onCheckedChanged (Landroid/widget/RadioGroup;I)V
+       [dx] ...while processing edu/ucdavis/cs/mobile/cop/benchmark/AnotherActivity$6.class
+       [dx] 
+       [dx] 
+       [dx] EXCEPTION FROM SIMULATION:
+       [dx] mismatched stack depths
+       [dx] 
+       [dx] underlay stack:
+       [dx] stack[top0]: I
+       [dx] overlay stack:
+       [dx] ...while merging to block 0025
+       [dx] ...while working on block 001a
+       [dx] ...while working on method onCheckedChanged:(Landroid/widget/RadioGroup;I)V
+       [dx] ...while processing onCheckedChanged (Landroid/widget/RadioGroup;I)V
+       [dx] ...while processing edu/ucdavis/cs/mobile/cop/benchmark/OtherActivity$1.class
+       [dx] 
+       [dx] 
+       [dx] EXCEPTION FROM SIMULATION:
+       [dx] mismatched stack depths
+       [dx] 
+       [dx] underlay stack:
+       [dx] stack[top0]: I
+       [dx] overlay stack:
+       [dx] ...while merging to block 0025
+       [dx] ...while working on block 001a
+       [dx] ...while working on method onCheckedChanged:(Landroid/widget/RadioGroup;I)V
+       [dx] ...while processing onCheckedChanged (Landroid/widget/RadioGroup;I)V
+       [dx] ...while processing edu/ucdavis/cs/mobile/cop/benchmark/OtherActivity$4.class
+       [dx] 
+       [dx] 
+       [dx] EXCEPTION FROM SIMULATION:
+       [dx] mismatched stack depths
+       [dx] 
+       [dx] underlay stack:
+       [dx] stack[top0]: I
+       [dx] overlay stack:
+       [dx] ...while merging to block 0039
+       [dx] ...while working on block 002e
+       [dx] ...while working on method onCheckedChanged:(Landroid/widget/RadioGroup;I)V
+       [dx] ...while processing onCheckedChanged (Landroid/widget/RadioGroup;I)V
+       [dx] ...while processing edu/ucdavis/cs/mobile/cop/benchmark/OtherActivity$5.class
+       [dx] 
+       [dx] 
+       [dx] EXCEPTION FROM SIMULATION:
+       [dx] mismatched stack depths
+       [dx] 
+       [dx] underlay stack:
+       [dx] stack[top0]: I
+       [dx] overlay stack:
+       [dx] ...while merging to block 0025
+       [dx] ...while working on block 001a
+       [dx] ...while working on method onCheckedChanged:(Landroid/widget/RadioGroup;I)V
+       [dx] ...while processing onCheckedChanged (Landroid/widget/RadioGroup;I)V
+       [dx] ...while processing edu/ucdavis/cs/mobile/cop/benchmark/OtherActivity$6.class
+       [dx] 
+       [dx] 8 errors; aborting

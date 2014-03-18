@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/other_light_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/monkey_light" />
+    
+    <SeekBar 
+        android:id="@+id/other_light_sb"
+        android:layout_centerHorizontal="true"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/other_light_tv"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/other_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/other_light_sb"
+        android:text="@string/monkey_voice" />
+    
+    <SeekBar 
+        android:id="@+id/other_voice_sb"
+        android:layout_centerHorizontal="true"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/other_voice"
+        android:layout_height="wrap_content" />
+    
+    <LinearLayout 
+    	android:orientation="horizontal"
+    	android:id="@+id/other_ring_ll"
+    	android:layout_below="@id/other_voice_sb"
+ 	    android:layout_width="fill_parent"
+   		android:layout_height="wrap_content" >
+		<TextView
+			android:id="@+id/other_ring_tv"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:text="@string/monkey_ring" />
+		<Spinner 
+			android:id="@+id/other_ring_sp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+	        android:layout_weight="1" />
+	</LinearLayout>
+    
+	<LinearLayout 
+    	android:orientation="horizontal"
+    	android:id="@+id/other_wifi_ll"
+    	android:layout_below="@id/other_ring_ll"
+ 	    android:layout_width="fill_parent"
+   		android:layout_height="wrap_content" >
+		<TextView
+			android:id="@+id/other_wifi_tv"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:text="@string/monkey_wifi" />
+		<CheckBox 
+			android:id="@+id/other_wifi_cb"
+			android:layout_width="wrap_content"
+	        android:layout_weight="1"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+   
+    <LinearLayout 
+    	android:orientation="horizontal"
+    	android:id="@+id/other_sync_ll"
+    	android:layout_below="@id/other_wifi_ll"
+ 	    android:layout_width="fill_parent"
+   		android:layout_height="wrap_content" >
+		<TextView
+			android:id="@+id/other_sync_tv"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+	        android:layout_weight="1"
+			android:text="@string/monkey_sync" />
+		<CheckBox 
+			android:id="@+id/other_sync_cb"
+			android:layout_width="wrap_content"
+	        android:layout_weight="1"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+    
+    <Button
+        android:id="@+id/other_jump"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/other_sync_ll"
+        android:text="@string/monkey_back" />
+    
+    <TextView android:id="@+id/other_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+    
+</RelativeLayout>

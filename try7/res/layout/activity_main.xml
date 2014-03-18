@@ -1,0 +1,184 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout 
+    	android:orientation="horizontal"
+    	android:id="@+id/app_battery_ll"
+ 	    android:layout_width="fill_parent"
+   		android:layout_height="wrap_content" >
+   		<TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="@string/app_battery" />
+	    <Button 
+	        android:id="@+id/app_battery_bt" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="@string/monkey_set"/>
+    </LinearLayout>
+    
+    <RadioGroup 
+        android:id="@+id/app_battery_rg"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_battery_ll"
+        android:layout_gravity="center_horizontal">
+        <RadioButton android:id="@+id/app_battery_on"
+	        android:text="@string/monkey_on"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:checked="true" />
+       	<RadioButton android:id="@+id/app_battery_off"
+            android:text="@string/monkey_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    
+    <LinearLayout 
+    	android:orientation="horizontal"
+    	android:id="@+id/app_work_ll"
+    	android:layout_below="@id/app_battery_rg"
+ 	    android:layout_width="fill_parent"
+   		android:layout_height="wrap_content" >
+   		<TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="@string/app_work" />
+	    <Button 
+	        android:id="@+id/app_work_bt" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="@string/monkey_set"/>
+    </LinearLayout>
+    
+    <RadioGroup 
+        android:id="@+id/app_work_rg"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_work_ll"
+        android:layout_gravity="center_horizontal">
+        <RadioButton android:id="@+id/app_work_on"
+	        android:text="@string/monkey_on"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:checked="true" />
+       	<RadioButton android:id="@+id/app_work_off"
+            android:text="@string/monkey_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    
+    <LinearLayout 
+    	android:orientation="horizontal"
+    	android:id="@+id/app_sleep_ll"
+    	android:layout_below="@id/app_work_rg"
+ 	    android:layout_width="fill_parent"
+   		android:layout_height="wrap_content" >
+   		<TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="@string/app_sleep" />
+	    <Button 
+	        android:id="@+id/app_sleep_bt" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="@string/monkey_set"/>
+    </LinearLayout>
+    
+    <RadioGroup 
+        android:id="@+id/app_sleep_rg"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_sleep_ll"
+        android:layout_gravity="center_horizontal">
+        <RadioButton android:id="@+id/app_sleep_on"
+	        android:text="@string/monkey_on"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:checked="true" />
+       	<RadioButton android:id="@+id/app_sleep_off"
+            android:text="@string/monkey_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    
+    <LinearLayout 
+    	android:orientation="horizontal"
+    	android:id="@+id/app_out_ll"
+    	android:layout_below="@id/app_sleep_rg"
+ 	    android:layout_width="fill_parent"
+   		android:layout_height="wrap_content" >
+   		<TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="@string/app_out" />
+	    <Button 
+	        android:id="@+id/app_out_bt" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="@string/monkey_set"/>
+    </LinearLayout>
+    
+    <RadioGroup 
+        android:id="@+id/app_out_rg"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_out_ll"
+        android:layout_gravity="center_horizontal">
+        <RadioButton android:id="@+id/app_out_on"
+	        android:text="@string/monkey_on"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:checked="true" />
+       	<RadioButton android:id="@+id/app_out_off"
+            android:text="@string/monkey_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    
+	<LinearLayout 
+    	android:orientation="horizontal"
+    	android:id="@+id/app_button_ll"
+    	android:layout_below="@id/app_out_rg"
+ 	    android:layout_width="fill_parent"
+   		android:layout_height="wrap_content" >
+		<Button
+			android:id="@+id/start"
+			android:layout_width="wrap_content"
+	        android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:text="@string/monkey_start" />
+		
+		<Button
+			android:id="@+id/end"
+			android:layout_width="wrap_content"
+	        android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:text="@string/monkey_end" />
+	</LinearLayout>
+    
+    <TextView 
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/end" />
+
+</RelativeLayout>
